@@ -7,12 +7,12 @@ function getRandomColor(elm) {
 }
 
 let btnClick = document.querySelector(".btn-click");
-let btnMove = document.querySelector(".btn-move");
+// let btnMove = document.querySelector(".btn-move");
 let first = document.querySelector(".first");
 let second = document.querySelector(".second");
 btnClick.addEventListener("click", function () {
   getRandomColor(first);
 });
-btnMove.addEventListener("mousemove", function () {
+second.addEventListener("mousemove", function () {
   getRandomColor(second);
 });
