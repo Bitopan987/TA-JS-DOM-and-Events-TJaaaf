@@ -6,11 +6,9 @@ function getRandomColor(elm) {
   elm.style.background = bgColor;
 }
 
-let btnClick = document.querySelector(".btn-click");
-// let btnMove = document.querySelector(".btn-move");
 let first = document.querySelector(".first");
 let second = document.querySelector(".second");
-btnClick.addEventListener("click", function () {
+first.addEventListener("click", function () {
   getRandomColor(first);
 });
 second.addEventListener("mousemove", function () {
