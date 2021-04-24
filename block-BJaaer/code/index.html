@@ -16,6 +16,7 @@
             type="text"
             name="text"
             placeholder="Enter your name"
+            required
           />
         </div>
         <div class="form-control">
@@ -25,11 +26,12 @@
             type="text"
             name="email"
             placeholder="Enter your email"
+            required
           />
         </div>
         <div class="form-control">
           <label for="movies">What do you love?</label>
-          <select id="movies" name="movies">
+          <select id="choices" name="choices">
             <option value="movies">Movies</option>
             <option value="series">Series</option>
             <option value="others">Others</option>
@@ -51,7 +53,7 @@
             <input
               type="radio"
               id="fiction"
-              name="drone"
+              name="book"
               value="fiction"
               checked
             />
@@ -62,14 +64,14 @@
             <input
               type="radio"
               id="non-fiction"
-              name="drone"
+              name="book"
               value="non-fiction"
             />
             <label for="non-fiction">Non Fiction</label>
           </div>
 
           <div>
-            <input type="radio" id="adventure" name="drone" value="adventure" />
+            <input type="radio" id="adventure" name="book" value="adventure" />
             <label for="adventure">Adventure</label>
           </div>
         </div>
@@ -79,6 +81,12 @@
         </div>
         <button type="submit">Submit</button>
       </form>
+      <div class="modal_overlay display">
+        <div class="container relative">
+          <button class="modal_close">X</button>
+          <div class="modal-info"></div>
+        </div>
+      </div>
     </div>
     <script src="./script.js"></script>
   </body>
