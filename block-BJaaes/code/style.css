@@ -1,0 +1,103 @@
+/* CSS Reset */
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+small {
+  color: red;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 700;
+  padding: 1rem 0;
+  background-color: wheat;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 30rem;
+  margin: 1rem auto;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.form-control input {
+  width: 100%;
+  display: block;
+  padding: 0.5rem;
+  border: 2px solid rgba(7, 179, 247, 0.26);
+  border-radius: 4px;
+  outline: none;
+  position: relative;
+}
+
+.form-control label {
+  padding: 0.4rem 0;
+  display: block;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: rgba(0, 255, 255, 0.219);
+}
+
+input:focus {
+  border: 2px solid #979494ed;
+}
+
+button {
+  width: 100%;
+  display: block;
+  padding: 0.7rem 0;
+  margin-top: 1rem;
+  background-color: #e7a325;
+  border: 0;
+  border-radius: 5px;
+  color: aliceblue;
+  font-size: 1rem;
+}
+
+.success input {
+  border: 2px solid #69e469;
+}
+
+.error input {
+  border: 2px solid red;
+}
