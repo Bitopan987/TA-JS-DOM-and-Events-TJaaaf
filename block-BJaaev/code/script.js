@@ -102,5 +102,6 @@ function updateActiveButton(btn = activeButton) {
     complete.classList.add("selected");
   }
 }
+
 updateActiveButton();
 todoInput.addEventListener("keyup", addTodo);
