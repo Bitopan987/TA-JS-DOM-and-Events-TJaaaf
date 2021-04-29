@@ -1,5 +1,6 @@
 let root = document.querySelector(".cards");
 let rootTags = document.querySelector(".tags");
+let search = document.querySelector(".search");
 
 let activeHouse = "";
 
@@ -49,6 +50,14 @@ function createcardsUI(data = []) {
   });
 }
 
+function handleSearch(event) {
+  let searchText = event.target.value;
+  let filteredPeople = allPeople.filter((p) =>
+    p.name.toLowerCase().includes(searchText)
+  );
+  createcardsUI(filteredPeople);
+}
+search.addEventListener("input", handleSearch);
 createcardsUI(allPeople);
 createTagsUI(allTags);
 {
