@@ -1,0 +1,81 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 20px 0;
+  background: #e688889b;
+}
+
+h1 {
+  text-align: center;
+}
+
+.grid {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card {
+  position: relative;
+  transition: all 0.4s linear;
+  transform-style: preserve-3d;
+  margin: 5px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.back {
+  transform: rotateY(180deg);
+  background: orange;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.card,
+.back,
+.front {
+  height: 150px;
+  width: 150px;
+}
+
+.back,
+.front {
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.front {
+  z-index: 2;
+  background: #fab942 url("./img/front.jpg") no-repeat center center / cover;
+}
+
+.back {
+  transform: rotateY(180deg);
+  background-color: #6589f9;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.selected {
+  transform: rotateY(180deg);
+}
+
+/* .selected {
+  border: 4px solid blue;
+} */
+
+.match .front {
+  background: linear-gradient(to bottom, #961c1c, #ffc400) !important;
+}
+
+.match {
+  background-image: none !important;
+}
