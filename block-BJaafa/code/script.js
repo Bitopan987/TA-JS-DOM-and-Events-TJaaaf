@@ -5,7 +5,7 @@ function jump() {
   frog.classList.add("jump-animmation");
   setTimeout(() => {
     frog.classList.remove("jump-animmation");
-  }, 250);
+  }, 500);
 }
 
 document.addEventListener("keypress", (event) => {
