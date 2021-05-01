@@ -1,0 +1,9 @@
+{
+  "name": "Frog Game",
+  "description": "Frog Game for new tap",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  }
+}
