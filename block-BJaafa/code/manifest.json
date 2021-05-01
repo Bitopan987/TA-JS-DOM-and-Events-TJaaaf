@@ -1,6 +1,6 @@
 {
-  "name": "Todo Application",
-  "description": "Todo Application for new tap",
+  "name": "Frog Game",
+  "description": "Frog Game for new tap",
   "version": "1.0.0",
   "manifest_version": 2,
   "chrome_url_overrides": {
